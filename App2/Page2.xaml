@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.Page2" Title="Главная страница">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Список ID-шников объектов offer"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand" FontSize="Large"/>
+            <!--<Button x:Name="button1" Text="Обновить информацию" Clicked="Button_Clicked"></Button>-->
+            <Button x:Name="button2" Text="Загрузить информацию" Clicked="button2_Clicked"></Button>
+            <!--<Button x:Name="button3" Text="Показать предложение" Clicked="button3_Clicked"></Button>-->
+
+            <ListView  x:Name="idList" ItemsSource="{Binding idArr}" ItemTapped="idList_ItemTapped" ></ListView>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
